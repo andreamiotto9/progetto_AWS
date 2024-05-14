@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Login corretto, reindirizza all'area riservata
         session_start();
         $_SESSION["username"] = $username;
+        $_SESSION["password"] = $password;
         header("Location: relazione.php");
     } else {
 
