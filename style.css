@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+.container_div{
+    text-align:left;
+    margin-bottom: 5%;
+    margin-left: 20%;
+}
+.testo1{
+    margin-bottom: 5%;
+}
+.testo{
+    border: 1px solid black;
+    margin-right: 30%;
+}
+.img{
+    width: 99%;
+}
