@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: relazione.php");
         exit();
     } else {
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     }
 }
