@@ -12,8 +12,6 @@ if ($conn->connect_error) {
 }else{
 echo "sei nel db stronzooooo";
 }
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
@@ -31,7 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         header("Location: login.php");
     }
-}
 
 $conn->close();
 ?>
