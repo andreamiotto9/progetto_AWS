@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     echo "Connessione al database fallita: ";
 }else{
-echo "sei nel db stronzooooo"
+echo "sei nel db stronzooooo";
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
