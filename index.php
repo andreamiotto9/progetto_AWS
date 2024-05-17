@@ -1,6 +1,6 @@
 <?php
 echo "ciao";
-$servername = "172.18.0.2";
+$servername = "172.18.0.3";
 $username = "andrea";
 $password = "password";
 $dbname = "your_docker_project";
