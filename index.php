@@ -1,22 +1,20 @@
 <?php
 session_start();
 
-$servername = "172.18.0.3"; // Assicurati che sia corretto
-$username = "andrea"; // Assicurati che sia corretto
-$password = "password"; // Assicurati che sia corretto
-$dbname = "your_docker_project"; // Assicurati che sia corretto
-
-// Connessione al database
+$servername = "172.18.0.3";
+$username = "andrea";
+$password = "password";
+$dbname = "your_docker_project";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verifica della connessione
+
 if ($conn->connect_error) {
     die("Connessione al database fallita: " . $conn->connect_error);
 }
 
-// Se il modulo di accesso è stato inviato
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Previene le SQL injection utilizzando le istruzioni preparate
+
     $username = $_POST["username"];
     $password = $_POST["password"];
 
@@ -27,13 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->get_result();
 
     if ($result->num_rows == 1) {
-        // Login corretto, reindirizza all'area riservata
+
         $_SESSION["username"] = $username;
         $_SESSION["password"] = $password;
         header("Location: relazione.php");
         exit();
     } else {
-        // Login fallito, reindirizza alla pagina di login
         header("Location: login.php");
         exit();
     }
