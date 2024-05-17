@@ -1,9 +1,9 @@
 <?php
 echo "ciao";
-$servername = "ec2-3-91-71-13.compute-1.amazonaws.com";
-$username = "newuser";
-$password = "newpassword";
-$dbname = "AWS";
+$servername = "172.18.0.2";
+$username = "andrea";
+$password = "password";
+$dbname = "your_docker_project";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
