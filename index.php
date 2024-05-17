@@ -1,9 +1,9 @@
 <?php
 echo "ciao";
-$servername = "db";
-$username = "root";
-$password = "";
-$dbname = "progetto";
+$servername = "ec2-3-91-71-13.compute-1.amazonaws.com";
+$username = "newuser";
+$password = "newpassword";
+$dbname = "AWS";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
