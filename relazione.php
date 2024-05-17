@@ -1,8 +1,8 @@
 <?php
-$servername = "db";
-$username = "nome_utente";
+$servername = "172.18.0.3";
+$username = "andrea";
 $password = "password";
-$dbname = "progetto";
+$dbname = "your_docker_project";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
