@@ -31,7 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: relazione.php");
         exit();
     } else {
-        header("Location: index.php");
+        echo "cane";
+        //header("Location: index.php");
         exit();
     }
 }
