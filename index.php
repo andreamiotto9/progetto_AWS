@@ -11,7 +11,6 @@ if($conn -> error){
     echo 'errore di connessione';
 
 }else{
-    header("Location: login.php");
     
 }
 ?>
