@@ -11,8 +11,6 @@ if(($conn -> query($login)) -> num_rows > 0){
 
     $_SESSION['password'] = $password;
     $_SESSION['email'] = $email;
-    
-    echo "ciao";
     header("Location: relazione.php");
 }
 else{
