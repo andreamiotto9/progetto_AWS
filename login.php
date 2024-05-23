@@ -4,18 +4,15 @@ session_start();
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$login = "SELECT * FROM clienti WHERE Email LIKE '$email' AND Password LIKE '$password'";
+$login = "SELECT * FROM utente WHERE username LIKE '$email' AND password LIKE '$password'";
 
 
 if(($conn -> query($login)) -> num_rows > 0){
 
     $_SESSION['password'] = $password;
     $_SESSION['email'] = $email;
-    header("location: member.php");
-
-    //file_get_content legge il contenuto di un file
-    //$html_biblioteca = file_get_contents('home_biblioteca.html');
-    //echo $html_biblioteca;
+    
+    echo "ciao";
 }
 else{
     echo "no";
