@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$servername = "172.18.0.3";
+$servername = "db";
 $username = "andrea";
 $password = "password";
 $dbname = "your_docker_project";
