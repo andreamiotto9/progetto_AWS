@@ -28,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $_SESSION["username"] = $username;
         $_SESSION["password"] = $password;
-        echo "credenziali corrette";
         header("Location: relazione.php");
         exit();
     } else {
