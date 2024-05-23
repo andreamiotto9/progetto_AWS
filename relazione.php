@@ -16,6 +16,7 @@ if (!isset($_SESSION['username']) || $_SESSION['password'] !== true) {
     exit;
 }
 
+$conn->close();
 ?>
 
 <!DOCTYPE html>
