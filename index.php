@@ -28,10 +28,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $_SESSION["username"] = $username;
         $_SESSION["password"] = $password;
-        header("Location: login.php");
+        echo "dentro if";
+       // header("Location: login.php");
         exit();
     } else {
-        header("Location: index.php");
+        echo "dentro else";
+        //header("Location: index.php");
         exit();
     }
 }
