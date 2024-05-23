@@ -1,14 +1,3 @@
-<?php
-require "index.php";
-session_start();
-
-if (!isset($_SESSION['username']) || $_SESSION['password'] !== true) {
-    exit;
-}
-
-$conn->close();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
